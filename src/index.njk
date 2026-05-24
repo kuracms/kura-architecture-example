@@ -14,12 +14,14 @@ permalink: /
 
 <section class="recent">
 	<h2>Recent work</h2>
-	<div class="index">
+	<div class="recent-photos">
 		{% for p in recent %}
-		<a class="row" href="/projects/{{ p.slug }}/">
-			<span class="year">{{ p.year }}</span>
-			<span class="name">{{ p.title }}</span>
-			<span class="meta">{{ p.location }} &middot; {{ p.typology | typologyLabel }}</span>
+		<a class="recent-photo" href="/projects/{{ p.slug }}/">
+			{% if p.hero_image %}<img src="{{ p.hero_image }}" alt="{{ p.title }}" loading="lazy" />{% endif %}
+			<div class="recent-photo-caption">
+				<span class="recent-photo-name">{{ p.title }}</span>
+				<span class="recent-photo-meta">{{ p.year }} &middot; {{ p.location }}</span>
+			</div>
 		</a>
 		{% endfor %}
 	</div>

@@ -188,6 +188,53 @@ main.wide {
   text-align: right;
 }
 
+/* ---- recent photo grid on home ---- */
+
+.recent-photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0 1.5rem;
+}
+@media (min-width: 720px) {
+  .recent-photos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+.recent-photo {
+  display: block;
+  color: var(--ink);
+}
+.recent-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease;
+}
+.recent-photo:hover img {
+  filter: brightness(0.96);
+}
+.recent-photo-caption {
+  margin-top: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.recent-photo-name {
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+.recent-photo-meta {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+.recent-photo:hover .recent-photo-name {
+  color: var(--accent);
+}
+
 /* ---- recent strip on home ---- */
 
 .recent {
