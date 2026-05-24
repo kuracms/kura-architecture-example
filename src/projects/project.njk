@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+wide: true
+pagination:
+  data: projects
+  size: 1
+  alias: project
+permalink: "/projects/{{ project.slug }}/"
+eleventyComputed:
+  title: "{{ project.title }}"
+---
+<div class="hero" style="background-image:url('{{ project.hero_image }}');"></div>
+
+<div class="project-detail">
+	<p class="subtitle">{{ project.typology | typologyLabel }} &middot; {{ project.year }}</p>
+	<h1>{{ project.title }}</h1>
+
+	<dl class="kv">
+		<div><dt>Year</dt><dd>{{ project.year }}</dd></div>
+		<div><dt>Location</dt><dd>{{ project.location }}</dd></div>
+		<div><dt>Typology</dt><dd>{{ project.typology | typologyLabel }}</dd></div>
+		<div><dt>Client</dt><dd>{{ project.client }}</dd></div>
+		<div><dt>Area</dt><dd>{{ project.area_sqm }} m&sup2;</dd></div>
+	</dl>
+
+	<div class="prose">
+		{{ project.description | renderBody | safe }}
+	</div>
+
+	<a class="back-link" href="/projects/">&larr; All projects</a>
+</div>

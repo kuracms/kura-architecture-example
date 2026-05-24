@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+permalink: /projects/
+title: Projects
+---
+{% set ordered = projects | bySortOrder %}
+
+<h1>Projects</h1>
+<p class="subtitle">Ten built works, 2017 to present</p>
+
+<div class="index">
+	{% for p in ordered %}
+	<a class="row" href="/projects/{{ p.slug }}/">
+		<span class="year">{{ p.year }}</span>
+		<span class="name">{{ p.title }}</span>
+		<span class="meta">{{ p.location }} &middot; {{ p.typology | typologyLabel }}</span>
+	</a>
+	{% endfor %}
+</div>

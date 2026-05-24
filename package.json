@@ -1,0 +1,16 @@
+{
+  "name": "kura-architecture-example",
+  "version": "1.0.0",
+  "description": "Example Eleventy site reading from a kura content backend. A small Copenhagen architecture practice demo at hagen.kuracms.com.",
+  "private": true,
+  "scripts": {
+    "fetch": "./fetch-content.sh",
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "wrangler": "^4.0.0"
+  }
+}

@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+permalink: /about/
+title: About
+---
+{% set about = pages | pageBySlug("about") %}
+
+<h1>{{ about.title }}</h1>
+{% if about.subtitle %}<p class="subtitle">{{ about.subtitle }}</p>{% endif %}
+
+<div class="prose">
+	{{ about.body | renderBody | safe }}
+</div>
+
+<section class="partners">
+	{% for partner in partners %}
+	<article class="partner">
+		<img src="{{ partner.photo }}" alt="{{ partner.name }}" loading="lazy">
+		<div>
+			<p class="role">{{ partner.role }}</p>
+			<h3>{{ partner.name }}</h3>
+			<div class="prose">{{ partner.bio | renderBody | safe }}</div>
+		</div>
+	</article>
+	{% endfor %}
+</section>

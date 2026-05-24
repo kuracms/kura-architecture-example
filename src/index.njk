@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+permalink: /
+---
+{% set home = pages | pageBySlug("home") %}
+{% set recent = projects | recentProjects(3) %}
+
+<h1>{{ home.title }}</h1>
+{% if home.subtitle %}<p class="subtitle">{{ home.subtitle }}</p>{% endif %}
+
+<div class="prose lede">
+	{{ home.body | renderBody | safe }}
+</div>
+
+<section class="recent">
+	<h2>Recent work</h2>
+	<div class="index">
+		{% for p in recent %}
+		<a class="row" href="/projects/{{ p.slug }}/">
+			<span class="year">{{ p.year }}</span>
+			<span class="name">{{ p.title }}</span>
+			<span class="meta">{{ p.location }} &middot; {{ p.typology | typologyLabel }}</span>
+		</a>
+		{% endfor %}
+	</div>
+	<a class="more-link" href="/projects/">All projects &rarr;</a>
+</section>

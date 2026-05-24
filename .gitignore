@@ -1,0 +1,9 @@
+node_modules/
+_site/
+_data/projects.json
+_data/partners.json
+_data/pages.json
+.wrangler/
+.env
+.env.local
+.DS_Store
