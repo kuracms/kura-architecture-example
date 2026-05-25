@@ -12,8 +12,13 @@ eleventyComputed:
 <div class="hero" style="background-image:url('{{ project.hero_image }}');"></div>
 
 <div class="project-detail">
-	<p class="subtitle">{{ project.typology | typologyLabel }} &middot; {{ project.year }}</p>
-	<h1>{{ project.title }}</h1>
+	<div class="project-detail-head">
+		<div class="project-detail-year">{{ project.year }}</div>
+		<div class="project-detail-title">
+			<p class="subtitle">{{ project.typology | typologyLabel }} &middot; {{ project.location }}</p>
+			<h1>{{ project.title }}</h1>
+		</div>
+	</div>
 
 	<dl class="kv">
 		<div><dt>Year</dt><dd>{{ project.year }}</dd></div>
