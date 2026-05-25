@@ -3,7 +3,7 @@ layout: layouts/base.njk
 permalink: /privacy/
 title: Privacy
 ---
-{% set p = pages | pageBySlug("privacy") %}
+{% set p =  globals | pageBySlug("privacy") %}
 
 <h1>{{ p.title }}</h1>
 {% if p.subtitle %}<p class="subtitle">{{ p.subtitle }}</p>{% endif %}

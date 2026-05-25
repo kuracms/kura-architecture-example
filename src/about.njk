@@ -3,7 +3,7 @@ layout: layouts/base.njk
 permalink: /about/
 title: About
 ---
-{% set about = pages | pageBySlug("about") %}
+{% set about =  globals | pageBySlug("about") %}
 
 <h1>{{ about.title }}</h1>
 {% if about.subtitle %}<p class="subtitle">{{ about.subtitle }}</p>{% endif %}

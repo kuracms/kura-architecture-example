@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 permalink: /
 ---
-{% set home = pages | pageBySlug("home") %}
+{% set home =  globals | pageBySlug("home") %}
 {% set recent = projects | recentProjects(3) %}
 
 <h1>{{ home.title }}</h1>

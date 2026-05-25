@@ -1,0 +1,38 @@
+[
+  {
+    "id": "8ca022dc-8858-4863-891d-7e5fb9fba071",
+    "slug": "about",
+    "title": "About",
+    "subtitle": "Practice, method, people",
+    "body": "Hagen Atelier was founded in 2017 by Liv Hagen and Mads Sorensen, after years between them at Aart, Lundgaard & Tranberg, and David Chipperfield in Berlin. The studio is in a converted print shop in Norrebro.\n\nWe work small on purpose. Every project has one of the two partners as lead, with the same person on the drawing board, in the planning meetings and on site - not a junior handed over after the brief.\n\nWe don't compete on fee. We don't pitch on speculative renders. The way to start a conversation is to email or visit; we'll meet you on site if we think we can help, and recommend someone else if we can't.",
+    "published": true,
+    "published_at": "2026-05-25T11:45:35.888Z"
+  },
+  {
+    "id": "71426934-3f52-488d-8f10-98d01d646ff8",
+    "slug": "contact",
+    "title": "Contact",
+    "subtitle": "Where to find us",
+    "body": "**Studio.** Stefansgade 35, 2200 Kobenhavn N. By appointment only.\n\n**Email.** **hello@hagenatelier.example** for new enquiries, **office@hagenatelier.example** for everything else.\n\n**Telephone.** +45 35 55 0188 (weekdays 9-17).\n\nIf you're enquiring about a project, tell us the site address, what you're hoping to do and any drawings you already have. We try to reply within the week.",
+    "published": true,
+    "published_at": "2026-05-25T11:45:35.888Z"
+  },
+  {
+    "id": "347f3e3a-c2bd-46cf-9128-62b6d736b84f",
+    "slug": "home",
+    "title": "Hagen Atelier",
+    "subtitle": "An architecture practice, Copenhagen",
+    "body": "A small studio - two architects, three assistants, ten built projects since 2017. We work on houses, extensions and interiors at a scale where every detail can be drawn and every drawing can be visited on site.\n\nWe don't have a house style. We try to make rooms that are quietly correct for the people who'll live or work in them, and quiet on the eye.",
+    "published": true,
+    "published_at": "2026-05-25T11:45:35.888Z"
+  },
+  {
+    "id": "a87187b4-4077-447b-8a38-1664a8856b5f",
+    "slug": "privacy",
+    "title": "Privacy",
+    "subtitle": "What we keep, what we don't",
+    "body": "When you contact us we keep your name, email and what you wrote, in our email system. We don't add you to any list and we don't share your details with anyone.\n\nIf you become a client we keep correspondence, drawings and invoices for the legally required seven years; everything else goes after that. If you'd like us to delete what we hold, write to **office@hagenatelier.example** and we'll do it within the week.\n\nThis site sets no tracking cookies and uses no third-party analytics.",
+    "published": true,
+    "published_at": "2026-05-25T11:45:35.888Z"
+  }
+]

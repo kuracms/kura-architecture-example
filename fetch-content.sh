@@ -35,4 +35,4 @@ print(f'Wrote {len(items)} ${type}')
 
 fetch_type project _data/projects.json sort_order
 fetch_type partner _data/partners.json name
-fetch_type page _data/pages.json slug
+fetch_type global _data/globals.json slug

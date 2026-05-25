@@ -3,7 +3,7 @@ layout: layouts/base.njk
 permalink: /contact/
 title: Contact
 ---
-{% set p = pages | pageBySlug("contact") %}
+{% set p =  globals | pageBySlug("contact") %}
 
 <h1>{{ p.title }}</h1>
 {% if p.subtitle %}<p class="subtitle">{{ p.subtitle }}</p>{% endif %}
